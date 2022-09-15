@@ -103,22 +103,24 @@ li {
   margin: 0 auto;
 }
 /*=================================
-  Header styling starts here
-=================================*/
-
-
-
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
-
-/*=================================
   main styling starts here
 =================================*/
+.started{
+  background-color: #69376D;
+}
+.started .wrapper{
+  display: flex;
 
+}
+
+.wrapper h2{
+  font-size: 30px;
+  text-transform: capitalize;
+  color: #E5E5E5;
+  font-weight: 600;
+}
+
+.wrapper h2 span{ text-transform: uppercase;}
 
 
 
