@@ -106,23 +106,52 @@ li {
   main styling starts here
 =================================*/
 .started{
-  background-color: #69376D;
+  background:linear-gradient(to right, #574876 , #783E79)
 }
 .started .wrapper{
   display: flex;
-
+  padding: 150px 0 70px;
 }
 
 .wrapper h2{
-  font-size: 30px;
-  text-transform: capitalize;
+  padding: 0 50px 0 0;
+  border-right: 2px solid #675570;
+  font-size: 28px;
   color: #E5E5E5;
   font-weight: 600;
+  flex-basis: 50%;
 }
+
+.wrapper .lower{ text-transform: capitalize;}
 
 .wrapper h2 span{ text-transform: uppercase;}
 
+.start-content{
+  flex-basis: 50%;
+  padding-left: 40px;
+}
 
+.start-content p {
+  font-size: 14px;
+  color: #B29DBC;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.content-btn{
+  padding-top: 15px;
+}
+
+.content-btn a {
+  text-transform: uppercase;
+  padding: 12px 29px;
+  background-color: #49BE8B;
+  border-radius: 25px;
+  font-size: 9px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
 
 
 
