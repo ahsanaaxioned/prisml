@@ -429,6 +429,10 @@ li {
 
 /* detail section end here */
 /* contact section start here */
+.contact{
+  border-bottom: 1px solid #CACACA;
+}
+
 .contact-detail h4 {
   font-size: 20px;
   color: #686561;
@@ -477,6 +481,7 @@ li {
 .active {
   flex-basis: 45.5%;
   padding-bottom: 25px;
+  padding-top: 22px;
 }
 
 .active input {
@@ -523,7 +528,7 @@ li {
   background-color: #616364;
 }
 
-.contact-list li:nth-child(1):before {
+.contact-list li:nth-child(1)::before {
   content: "\f099";
   font-family: "FontAwesome";
   float: left;
@@ -534,7 +539,7 @@ li {
   left: -3px;
 }
 
-.contact-list li:nth-child(2):before {
+.contact-list li:nth-child(2)::before {
   content: "\f09a";
   font-family: "FontAwesome";
   float: left;
@@ -545,7 +550,7 @@ li {
   left: -3px;
 }
 
-.contact-list li:nth-child(3):before {
+.contact-list li:nth-child(3)::before {
   content: "\f16d";
   font-family: "FontAwesome";
   float: left;
@@ -556,7 +561,7 @@ li {
   left: -3px;
 }
 
-.contact-list li:nth-child(4):before {
+.contact-list li:nth-child(4)::before {
   content: "\f0e0";
   font-family: "FontAwesome";
   float: left;
@@ -567,7 +572,7 @@ li {
   left: -3px;
 }
 
-.contact-list li:nth-child(5):before {
+.contact-list li:nth-child(5)::before {
   content: "\f015";
   font-family: "FontAwesome";
   float: left;
@@ -578,6 +583,10 @@ li {
   left: -3px;
 }
 
+.contact-list li:hover::before {
+  color: #64396C;
+}
+
 .contact-list li {
   display: block;
   position: relative;
@@ -586,9 +595,14 @@ li {
 
 .contact-list li a {
   font-size: 10px;
-  line-height: 30px;
+  line-height: 29px;
+  color: #726d69;
 }
 
+.tn{
+  text-transform: uppercase;
+}
+/* contact section end here */
 /*=================================
   main styling ends here
 =================================*/
@@ -596,17 +610,25 @@ li {
 /*=================================
   footer styling starts here
 =================================*/
+footer{
+  text-align: center;
+  font-size: 10px;
+  color: #B2B3B9;
+  padding-top: 48px;
+  padding-bottom: 15px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
 
-
-
-
-
-
-
+.copy-span{
+  text-transform: uppercase;
+}
 /*=================================
   footer styling ends here
 =================================*/
 
 /*media query starts*/
 /*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {}
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  
+}
