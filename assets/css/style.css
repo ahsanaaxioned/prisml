@@ -307,7 +307,7 @@ li {
 
 .more .more-btn a {
   text-transform: uppercase;
-  padding: 10px 29px;
+  padding: 10px 24px;
   background-color: #fff;
   border-radius: 25px;
   font-size: 10px;
@@ -355,13 +355,14 @@ li {
   display: flex;
   margin-bottom: 37px;
   border-bottom: 1px solid #E4E4E4;
+  box-shadow: 0 1px 5px #d9d1d1;
 }
 
 .detail-content h4 {
   font-size: 16px;
   color: #5B5F68;
   font-weight: 600;
-  padding: 66px 0 20px;
+  padding-bottom: 18px;
 }
 
 .detail-content h4 span {
@@ -375,11 +376,19 @@ li {
 }
 
 .detail-content {
-  padding: 0 37px;
+    padding: 0 37px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .detail-list li figure {
-  width: 61%;
+  flex-basis: 61%;
+}
+
+.detail-list li figure img{
+  object-fit: cover;
+  object-position: center;
 }
 
 .detail-btn {
@@ -442,7 +451,7 @@ li {
 
 .contact-detail p {
   font-size: 10px;
-  color: #ADA298;
+  color: #777;
   line-height: 23px;
   font-weight: 550;
   padding-right: 10px;
@@ -476,20 +485,29 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  flex-direction: column;
+}
+
+.input-text{
+  display: flex;
+  justify-content: space-between;
 }
 
 .active {
-  flex-basis: 45.5%;
+  flex-basis: 46%;
   padding-bottom: 25px;
   padding-top: 22px;
 }
 
 .active input {
   width: 100%;
-  padding: 7px 0;
+  padding: 9px 0;
   border: 1px solid #DDDCDC;
 }
 
+.input-email{
+  margin-right: -3%;
+}
 .active input::placeholder {
   color: #A7ACB1;
   text-transform: capitalize;
@@ -498,7 +516,7 @@ li {
 }
 
 .message textarea {
-  width: 128%;
+  width: 100%;
   color: #A7ACB1;
   text-transform: capitalize;
   font-size: 13px;
@@ -591,12 +609,14 @@ li {
   display: block;
   position: relative;
   padding-left: 25px;
+  width: 50%;
 }
 
 .contact-list li a {
   font-size: 10px;
   line-height: 29px;
-  color: #726d69;
+  /* color: #726d69; */
+  color: #777
 }
 
 .tn{
@@ -630,5 +650,14 @@ footer{
 /*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
-  
+ 
+.detail-list li figure {
+  flex-basis: 78%;
+}
+.contact-list li {
+  width: 55%;
+}
+.input-email {
+  margin-right: -4%;
+}
 }
