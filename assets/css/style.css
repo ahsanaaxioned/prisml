@@ -378,13 +378,15 @@ li {
   padding: 0 37px;
 }
 
-.detail-list li figure{
+.detail-list li figure {
   width: 61%;
 }
 
-.detail-btn{ padding: 25px 0 10px;}
+.detail-btn {
+  padding: 25px 0 10px;
+}
 
-.detail-btn a{
+.detail-btn a {
   text-transform: uppercase;
   padding: 10px 27px;
   background-color: #fff;
@@ -397,12 +399,12 @@ li {
   transition: all 0.3s;
 }
 
-.detail-btn a:hover{
+.detail-btn a:hover {
   color: #fff;
   background-color: #626263;
 }
 
-.next-btn a{
+.next-btn a {
   text-transform: uppercase;
   padding: 10px 30px;
   background-color: #fff;
@@ -415,39 +417,55 @@ li {
   transition: all 0.3s;
 }
 
-.next-btn a:hover{
+.next-btn a:hover {
   color: #fff;
   background-color: #5C5F61;
 }
 
-.next-btn{
+.next-btn {
   text-align: center;
   padding-bottom: 60px;
 }
+
 /* detail section end here */
 /* contact section start here */
-.contact-detail h4{
-  font-size: 18px;
+.contact-detail h4 {
+  font-size: 20px;
   color: #686561;
   font-weight: 600;
   padding-bottom: 30px;
 }
 
-.contact-detail h4 span{
+.contact-detail p {
+  font-size: 10px;
+  color: #ADA298;
+  line-height: 23px;
+  font-weight: 550;
+  padding-right: 10px;
+}
+
+.contact-detail p span{
   text-transform: capitalize;
 }
 
-.contact .wrapper{
+.contact-detail h4 span {
+  text-transform: capitalize;
+}
+
+.contact .wrapper {
   display: flex;
   padding-top: 60px;
 }
 
-.contact-detail{
+.contact-detail {
   flex-basis: 50%;
+  border-right: 2px solid #E4E4E4;
+  padding-right: 47px;
 }
 
-.contact-list{
+.contact-list {
   flex-basis: 50%;
+  padding-left: 40px;
 }
 
 
