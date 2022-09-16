@@ -354,7 +354,7 @@ li {
 .detail-list li {
   display: flex;
   margin-bottom: 37px;
-  box-shadow: 1px 1px 10px 0 #CDCDCD;
+  border-bottom: 1px solid #E4E4E4;
 }
 
 .detail-content h4 {
@@ -426,8 +426,29 @@ li {
 }
 /* detail section end here */
 /* contact section start here */
+.contact-detail h4{
+  font-size: 18px;
+  color: #686561;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
 
+.contact-detail h4 span{
+  text-transform: capitalize;
+}
 
+.contact .wrapper{
+  display: flex;
+  padding-top: 60px;
+}
+
+.contact-detail{
+  flex-basis: 50%;
+}
+
+.contact-list{
+  flex-basis: 50%;
+}
 
 
 /*=================================
