@@ -444,7 +444,7 @@ li {
   padding-right: 10px;
 }
 
-.contact-detail p span{
+.contact-detail p span {
   text-transform: capitalize;
 }
 
@@ -454,7 +454,7 @@ li {
 
 .contact .wrapper {
   display: flex;
-  padding-top: 60px;
+  padding: 60px 0;
 }
 
 .contact-detail {
@@ -468,16 +468,126 @@ li {
   padding-left: 40px;
 }
 
-.input-info{
+.input-info {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.a{
-  flex-basis: 20%;
+.active {
+  flex-basis: 45.5%;
+  padding-bottom: 25px;
 }
 
+.active input {
+  width: 100%;
+  padding: 7px 0;
+  border: 1px solid #DDDCDC;
+}
+
+.active input::placeholder {
+  color: #A7ACB1;
+  text-transform: capitalize;
+  font-size: 13px;
+  padding-left: 10px;
+}
+
+.message textarea {
+  width: 128%;
+  color: #A7ACB1;
+  text-transform: capitalize;
+  font-size: 13px;
+  padding-left: 10px;
+  border: 1px solid #DDDCDC;
+}
+
+.contact-btn {
+  padding-top: 22px;
+}
+
+.contact-btn a {
+  text-transform: uppercase;
+  padding: 11px 30px;
+  background-color: #fff;
+  border-radius: 25px;
+  font-size: 9px;
+  color: #616364;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: 1px solid #CFCFCF;
+  transition: all 0.3s;
+}
+
+.contact-btn a:hover {
+  color: #fff;
+  background-color: #616364;
+}
+
+.contact-list li:nth-child(1):before {
+  content: "\f099";
+  font-family: "FontAwesome";
+  float: left;
+  padding-right: 10px;
+  color: #41AA7D;
+  position: absolute;
+  top: 20%;
+  left: -3px;
+}
+
+.contact-list li:nth-child(2):before {
+  content: "\f09a";
+  font-family: "FontAwesome";
+  float: left;
+  padding-right: 10px;
+  color: #41AA7D;
+  position: absolute;
+  top: 20%;
+  left: -3px;
+}
+
+.contact-list li:nth-child(3):before {
+  content: "\f16d";
+  font-family: "FontAwesome";
+  float: left;
+  padding-right: 10px;
+  color: #41AA7D;
+  position: absolute;
+  top: 20%;
+  left: -3px;
+}
+
+.contact-list li:nth-child(4):before {
+  content: "\f0e0";
+  font-family: "FontAwesome";
+  float: left;
+  padding-right: 10px;
+  color: #41AA7D;
+  position: absolute;
+  top: 20%;
+  left: -3px;
+}
+
+.contact-list li:nth-child(5):before {
+  content: "\f015";
+  font-family: "FontAwesome";
+  float: left;
+  padding-right: 10px;
+  color: #41AA7D;
+  position: absolute;
+  top: 20%;
+  left: -3px;
+}
+
+.contact-list li {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+}
+
+.contact-list li a {
+  font-size: 10px;
+  line-height: 30px;
+}
 
 /*=================================
   main styling ends here
