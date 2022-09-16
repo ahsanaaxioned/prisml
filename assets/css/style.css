@@ -468,6 +468,16 @@ li {
   padding-left: 40px;
 }
 
+.input-info{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.a{
+  flex-basis: 20%;
+}
+
 
 /*=================================
   main styling ends here
