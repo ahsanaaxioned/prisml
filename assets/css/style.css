@@ -206,9 +206,7 @@ li {
   main styling starts here
 =================================*/
 /* start section start here */
-.started {
-  background: linear-gradient(to right, #574876, #783E79)
-}
+.started { background: linear-gradient(to right, #574876, #783E79) }
 
 .started .wrapper {
   display: flex;
@@ -224,13 +222,9 @@ li {
   flex-basis: 50%;
 }
 
-.wrapper .lower {
-  text-transform: capitalize;
-}
+.wrapper .lower { text-transform: capitalize; }
 
-.wrapper h2 span {
-  text-transform: uppercase;
-}
+.wrapper h2 span { text-transform: uppercase; }
 
 .start-content {
   flex-basis: 50%;
@@ -244,9 +238,7 @@ li {
   font-weight: 600;
 }
 
-.content-btn {
-  padding-top: 15px;
-}
+.content-btn { padding-top: 15px; }
 
 .content-btn a {
   text-transform: uppercase;
@@ -269,9 +261,7 @@ li {
 
 /* start section end here */
 /* more section start here */
-.more {
-  border-bottom: 1px solid #E1E1E1;
-}
+.more { border-bottom: 1px solid #E1E1E1; }
 
 .more .wrapper {
   display: flex;
@@ -290,7 +280,6 @@ li {
   font-size: 12px;
   line-height: 2;
   padding-right: 10px;
-  /* color: #948A82; */
   color: #767676;
 }
 
@@ -298,12 +287,9 @@ li {
   flex-basis: 50%;
   border-right: 2px solid #E4E4E4;
   padding-right: 47px;
-
 }
 
-.more-btn {
-  padding-top: 20px;
-}
+.more-btn { padding-top: 20px; }
 
 .more .more-btn a {
   text-transform: uppercase;
@@ -365,9 +351,7 @@ li {
   padding-bottom: 18px;
 }
 
-.detail-content h4 span {
-  text-transform: capitalize;
-}
+.detail-content h4 span { text-transform: capitalize; }
 
 .detail-content p {
   font-size: 11px;
@@ -376,24 +360,23 @@ li {
 }
 
 .detail-content {
-    padding: 0 37px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  padding: 0 37px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .detail-list li figure {
-  flex-basis: 61%;
+  flex-basis: 44%;
+  flex-shrink: 0;
 }
 
-.detail-list li figure img{
+.detail-list li figure img {
   object-fit: cover;
   object-position: center;
 }
 
-.detail-btn {
-  padding: 25px 0 10px;
-}
+.detail-btn { padding: 25px 0 10px; }
 
 .detail-btn a {
   text-transform: uppercase;
@@ -438,9 +421,7 @@ li {
 
 /* detail section end here */
 /* contact section start here */
-.contact{
-  border-bottom: 1px solid #CACACA;
-}
+.contact { border-bottom: 1px solid #CACACA; }
 
 .contact-detail h4 {
   font-size: 20px;
@@ -457,13 +438,9 @@ li {
   padding-right: 10px;
 }
 
-.contact-detail p span {
-  text-transform: capitalize;
-}
+.contact-detail p span { text-transform: capitalize; }
 
-.contact-detail h4 span {
-  text-transform: capitalize;
-}
+.contact-detail h4 span { text-transform: capitalize; }
 
 .contact .wrapper {
   display: flex;
@@ -488,7 +465,7 @@ li {
   flex-direction: column;
 }
 
-.input-text{
+.input-text {
   display: flex;
   justify-content: space-between;
 }
@@ -505,9 +482,8 @@ li {
   border: 1px solid #DDDCDC;
 }
 
-.input-email{
-  margin-right: -3%;
-}
+.input-email { margin-right: -3%; }
+
 .active input::placeholder {
   color: #A7ACB1;
   text-transform: capitalize;
@@ -524,9 +500,7 @@ li {
   border: 1px solid #DDDCDC;
 }
 
-.contact-btn {
-  padding-top: 22px;
-}
+.contact-btn { padding-top: 22px; }
 
 .contact-btn a {
   text-transform: uppercase;
@@ -601,9 +575,7 @@ li {
   left: -3px;
 }
 
-.contact-list li:hover::before {
-  color: #64396C;
-}
+.contact-list li:hover::before { color: #64396C; }
 
 .contact-list li {
   display: block;
@@ -615,13 +587,11 @@ li {
 .contact-list li a {
   font-size: 10px;
   line-height: 29px;
-  /* color: #726d69; */
   color: #777
 }
 
-.tn{
-  text-transform: uppercase;
-}
+.tn { text-transform: uppercase; }
+
 /* contact section end here */
 /*=================================
   main styling ends here
@@ -630,7 +600,7 @@ li {
 /*=================================
   footer styling starts here
 =================================*/
-footer{
+footer {
   text-align: center;
   font-size: 10px;
   color: #B2B3B9;
@@ -640,24 +610,168 @@ footer{
   text-transform: capitalize;
 }
 
-.copy-span{
-  text-transform: uppercase;
-}
+.copy-span { text-transform: uppercase; }
+
 /*=================================
   footer styling ends here
 =================================*/
 
 /*media query starts*/
-/*media query for 995px starts here*/
+/*media query for 1025-1200px starts here*/
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
- 
-.detail-list li figure {
-  flex-basis: 78%;
+
+  .detail-list li figure {
+    flex-basis: 50%;
+    flex-shrink: 0;
+  }
+
+  .contact-list li { width: 55%; }
+
+  .input-email { margin-right: -4%; }
 }
-.contact-list li {
-  width: 55%;
+
+/*media query for 1025-1200px end here*/
+/*media query for 769-1024px starts here*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .wrapper { width: 76.2%; }
+
+  .detail-list li figure {
+    flex-basis: 50%;
+    flex-shrink: 0;
+  }
+
+  .input-email { margin-right: -4%; }
+
+  .contact-list li { width: 60%; }
+
 }
-.input-email {
-  margin-right: -4%;
+
+/*media query for 769-1024px end here*/
+/*media query for 481-768px starts here*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .wrapper {
+    width: 70%;
+    flex-direction: column;
+  }
+
+  .wrapper h2 {
+    font-size: 27px;
+    padding: 10px 0 25px 0;
+    border-bottom: 2px solid #675570;
+    border-right: none;
+  }
+
+  .start-content { padding: 10px 0 25px 0; }
+
+  .content-btn { padding-top: 25px; }
+
+  .more .wrapper { flex-direction: column; }
+
+  .more .wrapper .more-content h3 { padding: 10px 0 20px; }
+
+  .more-content {
+    border-bottom: 2px solid #E4E4E4;
+    padding: 20px 0;
+    border-right: none;
+    padding-left: 10px;
+  }
+
+  .more-list {
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+
+  .detail-list li { display: block; }
+
+
+  .detail-content h4 { padding: 20px 0; }
+
+  .input-email { margin-right: -11px; }
+
+  .detail-btn { padding: 25px 0 20px; }
+
+  .contact-detail {
+    flex-basis: 50%;
+    border-bottom: 2px solid #E4E4E4;
+    border-right: none;
+    padding-right: 0;
+  }
+
+  .contact-btn {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  .contact-list {
+    padding-left: 10px;
+    padding-top: 20px;
+  }
+
+  .contact-list li { width: 45%; }
 }
+
+/*media query for 481-768px end here*/
+/*media query for 320-480px starts here*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .wrapper {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .wrapper h2 {
+    font-size: 23px;
+    padding: 10px 0 25px 0;
+    border-bottom: 2px solid #675570;
+    border-right: none;
+  }
+
+  .start-content { padding: 10px 0 25px 0; }
+
+  .content-btn { padding-top: 25px; }
+
+  .more .wrapper { flex-direction: column; }
+
+  .more .wrapper .more-content h3 { padding: 10px 0 20px; }
+
+  .more-content {
+    border-bottom: 2px solid #E4E4E4;
+    padding: 20px 0;
+    border-right: none;
+    padding-left: 10px;
+  }
+
+  .more-list {
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+
+  .detail-list li { display: block; }
+
+
+  .detail-content h4 { padding: 20px 0; }
+
+  .detail-btn { padding: 25px 0 20px; }
+
+  .contact-detail {
+    flex-basis: 50%;
+    border-bottom: 2px solid #E4E4E4;
+    border-right: none;
+    padding-right: 0;
+    padding-left: 10px;
+  }
+
+  .input-email { margin-right: -3.5%; }
+
+  .contact-btn {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  .contact-list {
+    padding-left: 10px;
+    padding-top: 20px;
+  }
+
+  .contact-list li { width: 53%; }
 }
+/*media query for 320-480px end here*/
